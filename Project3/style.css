@@ -1,0 +1,181 @@
+/* Global View - Desktop */
+html {
+	background: linear-gradient(#7F8C8D, #D3D3D3)
+}
+
+.body {
+	font-family: 'Asap', sans-serif;
+}
+
+.container {
+	min-height: 500px;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 140px;
+}
+
+.header-container {
+	background-color: rgb(60,60,60);
+	min-height: 100px;
+	/* Zebu menu zawsze bylo na gorze */
+	position: fixed;
+	width: 100%;
+}
+
+.footer-container {
+	background-color: rgb(60,60,60);
+	min-height: 100px;
+}
+
+.mybutton {
+	text-decoration: none;
+	color: white;
+	font-family: 'Asap', sans-serif;
+	padding: 12px 25px;
+	display: inline-block;
+	margin-left: 10px;
+	border: 1px solid white;
+}
+
+.mybutton:hover {
+	box-shadow: 3px 3px 6px darkgray;
+}
+
+.highlight {
+	font-weight: bold;
+	color: white;
+}
+
+.logo {
+	color: white;
+}
+
+
+header {
+	max-width: 1024px;
+	min-height: 100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer {
+	max-width: 1024px;
+	min-height: 100px;
+	margin: 0 auto;
+}
+
+.col {
+	width: 30%;
+	margin-bottom: 40px;
+	background-color: rgb(43,226,147);
+}
+
+.col p {
+	color: white;
+	font-size: 0.875rem;
+	padding: 20px 20px;
+	line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+	display: none;
+}
+
+.col img {
+	width: 100%;
+	height: auto;
+}
+
+.col p::first-line {
+	font-weight: bold;
+}
+
+.mob-wrapper {
+	display: none;
+	padding-right: 20px;
+}
+
+.navbutton {
+	display: block;
+	background-color: coral;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: white;
+	margin-left: -90px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+/* Tablet View - standard 768px */
+/* Responsywnosc, gdy schodzi mniej niz to uruchamia ten styl */
+@media  (max-width: 768px) {
+	.col {
+		width: 45%;
+	}
+
+	/* Wracamy z powrtem, bo css idzie od gory na dol */
+	.hide-desktop-only {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.mob-wrapper {
+		display: block;
+	}
+
+	.mob-nav {
+		display: none;
+	}
+
+	.mob-nav {
+		position: absolute;
+		padding-top: 10px;
+	}
+
+	.logo {
+		margin-left: 20px;
+	}
+}
+
+/* Mobile View - standard 400(360)px */
+@media  (max-width: 400px) {
+	.col {
+		width: 100%;
+	}
+
+	.hide-mobile-only {
+		display: none;
+	}
+
+	header {
+		display: block;
+		text-align: center;
+	}
+
+	.logo {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	.mybutton {
+		display: block;
+		margin: 10px 10px;
+	}
+
+	.container {
+		padding-top: 30px;
+	}
+
+	.header-container {
+		position: relative;
+		padding-bottom: 5px;
+	}
+}

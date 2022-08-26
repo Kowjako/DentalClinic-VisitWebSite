@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Road Cycles - Contact Us</title>
+	<meta name="description" content="Contact details for Roar Bikes">
+
+	<!-- Eric Meyer CSS Reset -->
+	<link rel="stylesheet" type="text/css" href="css-reset.css">
+
+	<!-- Global stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Czcionki z Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<!-- Do pobierania ikonek z FontAwesome.com -->
+	<script src="https://kit.fontawesome.com/fb90f7999b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div>
+				<a href="index.html">	
+				<img src="images/logo-roar-bikes.svg" alt="site logo">
+				</a>
+			</div>
+			<div>
+				<nav>
+					<div class="navbutton">
+						<a href="#">Book Online</a>
+
+						<!-- Sub Menu -->
+						<div class="dropdown">
+							<div class="navbutton"> 
+								<a href="#">Onsite Services</a>
+							</div>
+							<div class="navbutton"> 
+								<a href="#">Parts Delivery</a>
+							</div>
+							<div class="navbutton"> 
+								<a href="#">Request Callback</a>
+							</div>
+						</div>
+					</div>
+					<div class="navbutton"> 
+						<a href="#">About</a>
+					</div>
+					<div class="navbutton">
+						<a href="#" >Contact</a>
+					</div>					
+				</nav>
+			</div>
+		</header>
+
+		<div class="main2">
+			<h1>Contact us</h1>
+			<p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+			
+			<form action="" method="post">
+
+
+				<div class="inputwrapper">
+					<label for="address">First Name</label>
+				</div>
+				<!-- tu w for wstawiamy id inputa -->
+				<div class="inputwrapper">
+					<input type="text" id="address" name="address"
+					placeholder="First Name">
+				</div>
+
+				<div class="inputwrapper">
+					<label for="email">Email</label>
+				</div>
+
+				<div class="inputwrapper">
+					<input type="email" id="email" name="email"
+					placeholder="Email">
+				</div>
+				
+				<div class="inputwrapper">
+					<textarea name="message" id="message" cols="100"
+					rows="10" placeholder="Type your message"></textarea>
+				</div>
+
+				<div class="inputwrapper">
+					<input type="checkbox" name="news" id="news" checked>
+					<label for="news">Check our news</label>
+				</div>
+
+				<div class="inputwrapper">
+					<p>How would you be contacted?</p>
+					<input type="radio" name="contact" id="contact1">
+					<label for="contact1" class="margin-right-a">Phone</label>
+					<input type="radio" name="contact" id="contact2">
+					<label for="contact2" class="margin-right-a">E-mail</label>
+				</div>
+				<!-- Combobox
+				<div class="inputwrapper">
+					<select name="country" id="country">
+						<option value="none">Choose Country</option>
+						<option value="Wlodzimierz">Wlodzimierz</option>
+						<option value="Adam">Adam</option>
+						<option value="Leanid">Leanid</option>
+					</select>
+				</div> -->
+
+				<div class="inputwrapper">
+					<input type="submit" class="mybutton" value="Fire away">
+				</div>
+				
+			</form>
+
+		</div>
+	</div>
+</body>
+</html>
